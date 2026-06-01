@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Interactive India map with clickable states and union territories." />
+  <title>Interactive India Map</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div>
+        <h1>Interactive India Map</h1>
+        <p>Touch or click any state to reveal its key points.</p>
+      </div>
+    </header>
+
+    <main class="main-grid">
+      <section class="map-panel">
+        <div class="map-intro">
+          <h2>India Map</h2>
+          <p>The complete map displays all 28 states and 8 union territories.</p>
+        </div>
+
+        <div class="svg-shell">
+          <img class="map-base-image" src="assets/images/india-map.png" alt="India map background" />
+          <svg id="indiaMap" class="india-map" viewBox="0 0 1000 1330" aria-labelledby="mapTitle mapDesc" role="img">
+            <title id="mapTitle">India map with states and union territories</title>
+            <desc id="mapDesc">Click any region to see state details in the panel.</desc>
+
+            <g class="map-regions">
+              <path id="ladakh" class="map-state" data-state="Ladakh" d="M560 40 L705 40 L740 140 L620 170 L560 150 Z" />
+              <path id="jammu-and-kashmir" class="map-state" data-state="Jammu and Kashmir" d="M280 60 L550 80 L620 170 L420 170 Z" />
+              <path id="himachal-pradesh" class="map-state" data-state="Himachal Pradesh" d="M310 180 L430 180 L460 230 L330 240 Z" />
+              <path id="punjab" class="map-state" data-state="Punjab" d="M260 230 L340 230 L360 290 L260 290 Z" />
+              <path id="chandigarh" class="map-state" data-state="Chandigarh" d="M340 270 L360 270 L360 290 L340 290 Z" />
+              <path id="haryana" class="map-state" data-state="Haryana" d="M350 300 L420 300 L450 360 L360 360 Z" />
+              <path id="delhi" class="map-state" data-state="Delhi" d="M410 330 L430 330 L430 355 L410 355 Z" />
+              <path id="uttarakhand" class="map-state" data-state="Uttarakhand" d="M430 200 L500 200 L530 250 L430 255 Z" />
+              <path id="rajasthan" class="map-state" data-state="Rajasthan" d="M110 300 L320 300 L310 500 L120 500 Z" />
+              <path id="gujarat" class="map-state" data-state="Gujarat" d="M80 510 L220 510 L220 660 L100 660 Z" />
+              <path id="daman-and-diu" class="map-state" data-state="Dadra and Nagar Haveli and Daman and Diu" d="M155 650 L190 650 L190 675 L155 675 Z" />
+              <path id="uttar-pradesh" class="map-state" data-state="Uttar Pradesh" d="M325 340 L500 340 L500 450 L330 450 Z" />
+              <path id="bihar" class="map-state" data-state="Bihar" d="M505 345 L600 345 L600 415 L505 415 Z" />
+              <path id="sikkim" class="map-state" data-state="Sikkim" d="M615 280 L640 280 L640 320 L615 320 Z" />
+              <path id="west-bengal" class="map-state" data-state="West Bengal" d="M610 360 L770 360 L770 450 L610 450 Z" />
+              <path id="jharkhand" class="map-state" data-state="Jharkhand" d="M520 420 L610 420 L610 470 L520 470 Z" />
+              <path id="odisha" class="map-state" data-state="Odisha" d="M570 470 L700 470 L700 560 L570 560 Z" />
+              <path id="chhattisgarh" class="map-state" data-state="Chhattisgarh" d="M440 470 L540 470 L560 590 L440 610 Z" />
+              <path id="madhya-pradesh" class="map-state" data-state="Madhya Pradesh" d="M270 470 L450 470 L450 610 L290 610 Z" />
+              <path id="maharashtra" class="map-state" data-state="Maharashtra" d="M250 620 L450 620 L440 810 L260 810 Z" />
+              <path id="goa" class="map-state" data-state="Goa" d="M280 820 L330 820 L330 855 L280 855 Z" />
+              <path id="karnataka" class="map-state" data-state="Karnataka" d="M250 820 L420 820 L420 930 L250 930 Z" />
+              <path id="kerala" class="map-state" data-state="Kerala" d="M250 940 L310 940 L310 1020 L250 1020 Z" />
+              <path id="tamil-nadu" class="map-state" data-state="Tamil Nadu" d="M430 900 L730 900 L740 1030 L430 1030 Z" />
+              <path id="puducherry" class="map-state" data-state="Puducherry" d="M620 940 L650 940 L650 980 L620 980 Z" />
+              <path id="andhra-pradesh" class="map-state" data-state="Andhra Pradesh" d="M550 610 L720 610 L720 760 L550 760 Z" />
+              <path id="telangana" class="map-state" data-state="Telangana" d="M480 620 L560 620 L560 700 L480 700 Z" />
+              <path id="assam" class="map-state" data-state="Assam" d="M680 230 L830 230 L830 330 L680 330 Z" />
+              <path id="arunachal-pradesh" class="map-state" data-state="Arunachal Pradesh" d="M840 140 L980 140 L980 240 L840 240 Z" />
+              <path id="nagaland" class="map-state" data-state="Nagaland" d="M840 330 L900 330 L900 380 L840 380 Z" />
+              <path id="manipur" class="map-state" data-state="Manipur" d="M820 380 L900 380 L900 430 L820 430 Z" />
+              <path id="mizoram" class="map-state" data-state="Mizoram" d="M820 430 L900 430 L900 500 L820 500 Z" />
+              <path id="tripura" class="map-state" data-state="Tripura" d="M770 350 L820 350 L820 410 L770 410 Z" />
+              <path id="meghalaya" class="map-state" data-state="Meghalaya" d="M730 300 L780 300 L780 345 L730 345 Z" />
+              <path id="lakshadweep" class="map-state" data-state="Lakshadweep" d="M160 1100 L210 1100 L210 1140 L160 1140 Z" />
+              <path id="andaman-and-nicobar-islands" class="map-state" data-state="Andaman and Nicobar Islands" d="M830 980 L940 980 L940 1080 L830 1080 Z" />
+            </g>
+
+            <g class="map-labels">
+              <text class="state-label" x="590" y="90">Ladakh</text>
+              <text class="state-label" x="370" y="120">Jammu & Kashmir</text>
+              <text class="state-label" x="340" y="220">Himachal Pradesh</text>
+              <text class="state-label" x="290" y="270">Punjab</text>
+              <text class="state-label" x="345" y="285">Chandigarh</text>
+              <text class="state-label" x="370" y="340">Haryana</text>
+              <text class="state-label" x="425" y="345">Delhi</text>
+              <text class="state-label" x="450" y="230">Uttarakhand</text>
+              <text class="state-label" x="180" y="360">Rajasthan</text>
+              <text class="state-label" x="125" y="560">Gujarat</text>
+              <text class="state-label" x="160" y="665">Dadra & Diu</text>
+              <text class="state-label" x="380" y="385">Uttar Pradesh</text>
+              <text class="state-label" x="540" y="380">Bihar</text>
+              <text class="state-label" x="620" y="305">Sikkim</text>
+              <text class="state-label" x="650" y="400">West Bengal</text>
+              <text class="state-label" x="550" y="445">Jharkhand</text>
+              <text class="state-label" x="620" y="520">Odisha</text>
+              <text class="state-label" x="480" y="510">Chhattisgarh</text>
+              <text class="state-label" x="345" y="525">Madhya Pradesh</text>
+              <text class="state-label" x="330" y="715">Maharashtra</text>
+              <text class="state-label" x="290" y="835">Goa</text>
+              <text class="state-label" x="320" y="890">Karnataka</text>
+              <text class="state-label" x="280" y="965">Kerala</text>
+              <text class="state-label" x="550" y="960">Tamil Nadu</text>
+              <text class="state-label" x="620" y="965">Puducherry</text>
+              <text class="state-label" x="600" y="680">Andhra Pradesh</text>
+              <text class="state-label" x="505" y="655">Telangana</text>
+              <text class="state-label" x="750" y="290">Assam</text>
+              <text class="state-label" x="865" y="190">Arunachal Pradesh</text>
+              <text class="state-label" x="855" y="355">Nagaland</text>
+              <text class="state-label" x="835" y="410">Manipur</text>
+              <text class="state-label" x="835" y="460">Mizoram</text>
+              <text class="state-label" x="790" y="380">Tripura</text>
+              <text class="state-label" x="745" y="330">Meghalaya</text>
+              <text class="state-label" x="175" y="1125">Lakshadweep</text>
+              <text class="state-label" x="845" y="1030">Andaman & Nicobar</text>
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <aside class="details-panel">
+        <div class="details-header">
+          <h2 id="detailsTitle">Select a state</h2>
+          <p id="detailsSubtitle">Click a region on the map to see five important points.</p>
+        </div>
+        <div class="details-list" id="detailsList">
+          <p class="note">State information appears here after selection.</p>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

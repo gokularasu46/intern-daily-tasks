@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "name": "Andhra Pradesh",
+    "type": "State",
+    "capital": "Amaravati",
+    "language": "Telugu",
+    "touristPlace": "Tirupati Temple",
+    "industry": "Agriculture and IT",
+    "fact": "Andhra Pradesh is known for its rich classical music and Kuchipudi dance."
+  },
+  {
+    "id": 2,
+    "name": "Arunachal Pradesh",
+    "type": "State",
+    "capital": "Itanagar",
+    "language": "English",
+    "touristPlace": "Tawang Monastery",
+    "industry": "Hydropower and tourism",
+    "fact": "Arunachal Pradesh has one of the highest tribal diversity levels in India."
+  },
+  {
+    "id": 3,
+    "name": "Assam",
+    "type": "State",
+    "capital": "Dispur",
+    "language": "Assamese",
+    "touristPlace": "Kaziranga National Park",
+    "industry": "Tea and oil",
+    "fact": "Assam produces the majority of India’s tea and has the one-horned rhino."
+  },
+  {
+    "id": 4,
+    "name": "Bihar",
+    "type": "State",
+    "capital": "Patna",
+    "language": "Hindi",
+    "touristPlace": "Bodh Gaya",
+    "industry": "Agriculture and education",
+    "fact": "Bihar is the birthplace of the ancient Nalanda University."
+  },
+  {
+    "id": 5,
+    "name": "Chhattisgarh",
+    "type": "State",
+    "capital": "Raipur",
+    "language": "Hindi",
+    "touristPlace": "Chitrakote Falls",
+    "industry": "Steel and power",
+    "fact": "Chhattisgarh is one of India’s richest mineral states."
+  },
+  {
+    "id": 6,
+    "name": "Goa",
+    "type": "State",
+    "capital": "Panaji",
+    "language": "Konkani",
+    "touristPlace": "Baga Beach",
+    "industry": "Tourism and mining",
+    "fact": "Goa is India’s smallest state by area and a top beach destination."
+  },
+  {
+    "id": 7,
+    "name": "Gujarat",
+    "type": "State",
+    "capital": "Gandhinagar",
+    "language": "Gujarati",
+    "touristPlace": "Somnath Temple",
+    "industry": "Petrochemicals and ports",
+    "fact": "Gujarat is the birthplace of Mahatma Gandhi."
+  },
+  {
+    "id": 8,
+    "name": "Haryana",
+    "type": "State",
+    "capital": "Chandigarh",
+    "language": "Hindi",
+    "touristPlace": "Surajkund Craft Mela",
+    "industry": "Manufacturing and automobiles",
+    "fact": "Haryana is one of India’s leading agricultural states."
+  },
+  {
+    "id": 9,
+    "name": "Himachal Pradesh",
+    "type": "State",
+    "capital": "Shimla",
+    "language": "Hindi",
+    "touristPlace": "Rohtang Pass",
+    "industry": "Tourism and apple farming",
+    "fact": "Himachal Pradesh is home to the Great Himalayan National Park."
+  },
+  {
+    "id": 10,
+    "name": "Jharkhand",
+    "type": "State",
+    "capital": "Ranchi",
+    "language": "Hindi",
+    "touristPlace": "Betla National Park",
+    "industry": "Coal mining and steel",
+    "fact": "Jharkhand supplies a large share of India’s mineral resources."
+  },
+  {
+    "id": 11,
+    "name": "Karnataka",
+    "type": "State",
+    "capital": "Bengaluru",
+    "language": "Kannada",
+    "touristPlace": "Hampi",
+    "industry": "Information Technology",
+    "fact": "Bengaluru is known as India’s Silicon Valley."
+  },
+  {
+    "id": 12,
+    "name": "Kerala",
+    "type": "State",
+    "capital": "Thiruvananthapuram",
+    "language": "Malayalam",
+    "touristPlace": "Alleppey Backwaters",
+    "industry": "Tourism and spices",
+    "fact": "Kerala has one of the highest literacy rates in India."
+  },
+  {
+    "id": 13,
+    "name": "Madhya Pradesh",
+    "type": "State",
+    "capital": "Bhopal",
+    "language": "Hindi",
+    "touristPlace": "Khajuraho Temples",
+    "industry": "Mining and tourism",
+    "fact": "Madhya Pradesh is called the heart of India."
+  },
+  {
+    "id": 14,
+    "name": "Maharashtra",
+    "type": "State",
+    "capital": "Mumbai",
+    "language": "Marathi",
+    "touristPlace": "Ajanta and Ellora Caves",
+    "industry": "Film and finance",
+    "fact": "Maharashtra is home to Bollywood, India’s film capital."
+  },
+  {
+    "id": 15,
+    "name": "Manipur",
+    "type": "State",
+    "capital": "Imphal",
+    "language": "Meitei",
+    "touristPlace": "Loktak Lake",
+    "industry": "Handloom and sports goods",
+    "fact": "Manipur is the birthplace of modern polo."
+  },
+  {
+    "id": 16,
+    "name": "Meghalaya",
+    "type": "State",
+    "capital": "Shillong",
+    "language": "Khasi",
+    "touristPlace": "Living Root Bridges",
+    "industry": "Tourism and forestry",
+    "fact": "Meghalaya includes one of the wettest places on earth."
+  },
+  {
+    "id": 17,
+    "name": "Mizoram",
+    "type": "State",
+    "capital": "Aizawl",
+    "language": "Mizo",
+    "touristPlace": "Dzukou Valley",
+    "industry": "Bamboo and handicrafts",
+    "fact": "Mizoram is known for its clean cities and lush hills."
+  },
+  {
+    "id": 18,
+    "name": "Nagaland",
+    "type": "State",
+    "capital": "Kohima",
+    "language": "English",
+    "touristPlace": "Hornbill Festival",
+    "industry": "Handicrafts and agriculture",
+    "fact": "Nagaland celebrates a vibrant tribal culture with 16 tribes."
+  },
+  {
+    "id": 19,
+    "name": "Odisha",
+    "type": "State",
+    "capital": "Bhubaneswar",
+    "language": "Odia",
+    "touristPlace": "Konark Sun Temple",
+    "industry": "Steel and mining",
+    "fact": "Odisha is famous for the classical Odissi dance form."
+  },
+  {
+    "id": 20,
+    "name": "Punjab",
+    "type": "State",
+    "capital": "Chandigarh",
+    "language": "Punjabi",
+    "touristPlace": "Golden Temple",
+    "industry": "Agriculture and food processing",
+    "fact": "Punjab is often called the breadbasket of India."
+  },
+  {
+    "id": 21,
+    "name": "Rajasthan",
+    "type": "State",
+    "capital": "Jaipur",
+    "language": "Hindi",
+    "touristPlace": "Amber Fort",
+    "industry": "Tourism and textiles",
+    "fact": "Rajasthan is the largest state by area in India."
+  },
+  {
+    "id": 22,
+    "name": "Sikkim",
+    "type": "State",
+    "capital": "Gangtok",
+    "language": "Nepali",
+    "touristPlace": "Gurudongmar Lake",
+    "industry": "Organic farming and tourism",
+    "fact": "Sikkim is India’s first fully organic state."
+  },
+  {
+    "id": 23,
+    "name": "Tamil Nadu",
+    "type": "State",
+    "capital": "Chennai",
+    "language": "Tamil",
+    "touristPlace": "Meenakshi Amman Temple",
+    "industry": "Automobile and IT",
+    "fact": "Tamil is one of the oldest living languages in the world."
+  },
+  {
+    "id": 24,
+    "name": "Telangana",
+    "type": "State",
+    "capital": "Hyderabad",
+    "language": "Telugu",
+    "touristPlace": "Charminar",
+    "industry": "IT and pharmaceuticals",
+    "fact": "Hyderabad is known as the city of pearls."
+  },
+  {
+    "id": 25,
+    "name": "Tripura",
+    "type": "State",
+    "capital": "Agartala",
+    "language": "Bengali",
+    "touristPlace": "Ujjayanta Palace",
+    "industry": "Handloom and agriculture",
+    "fact": "Tripura is home to ancient temples and terracotta craft."
+  },
+  {
+    "id": 26,
+    "name": "Uttar Pradesh",
+    "type": "State",
+    "capital": "Lucknow",
+    "language": "Hindi",
+    "touristPlace": "Taj Mahal",
+    "industry": "Agriculture and handloom",
+    "fact": "Uttar Pradesh is the most populous state in India."
+  },
+  {
+    "id": 27,
+    "name": "Uttarakhand",
+    "type": "State",
+    "capital": "Dehradun",
+    "language": "Hindi",
+    "touristPlace": "Valley of Flowers",
+    "industry": "Tourism and hydropower",
+    "fact": "Uttarakhand is the source of the Ganges and Yamuna rivers."
+  },
+  {
+    "id": 28,
+    "name": "West Bengal",
+    "type": "State",
+    "capital": "Kolkata",
+    "language": "Bengali",
+    "touristPlace": "Sundarbans",
+    "industry": "Tea and jute",
+    "fact": "West Bengal produced Nobel laureate Rabindranath Tagore."
+  },
+  {
+    "id": 29,
+    "name": "Andaman and Nicobar Islands",
+    "type": "Union Territory",
+    "capital": "Port Blair",
+    "language": "Bengali, Tamil, Hindi",
+    "touristPlace": "Cellular Jail",
+    "industry": "Tourism and fisheries",
+    "fact": "The islands are known for clear waters and coral reefs."
+  },
+  {
+    "id": 30,
+    "name": "Chandigarh",
+    "type": "Union Territory",
+    "capital": "Chandigarh",
+    "language": "Punjabi, Hindi",
+    "touristPlace": "Rock Garden",
+    "industry": "Administration and education",
+    "fact": "Chandigarh is the first planned city of modern India."
+  },
+  {
+    "id": 31,
+    "name": "Dadra and Nagar Haveli and Daman and Diu",
+    "type": "Union Territory",
+    "capital": "Silvassa",
+    "language": "Gujarati, Marathi",
+    "touristPlace": "Nani Daman Fort",
+    "industry": "Manufacturing and chemicals",
+    "fact": "This territory combines three separate coastal and inland regions."
+  },
+  {
+    "id": 32,
+    "name": "Delhi",
+    "type": "Union Territory",
+    "capital": "New Delhi",
+    "language": "Hindi, English",
+    "touristPlace": "India Gate",
+    "industry": "Government and services",
+    "fact": "Delhi is the national capital territory of India."
+  },
+  {
+    "id": 33,
+    "name": "Jammu and Kashmir",
+    "type": "Union Territory",
+    "capital": "Srinagar (summer), Jammu (winter)",
+    "language": "Kashmiri, Urdu, Dogri",
+    "touristPlace": "Dal Lake",
+    "industry": "Tourism and horticulture",
+    "fact": "Jammu and Kashmir is known for its alpine valleys and saffron fields."
+  },
+  {
+    "id": 34,
+    "name": "Ladakh",
+    "type": "Union Territory",
+    "capital": "Leh",
+    "language": "Ladakhi, Urdu",
+    "touristPlace": "Pangong Lake",
+    "industry": "Tourism and handicrafts",
+    "fact": "Ladakh includes some of the world’s highest motorable roads."
+  },
+  {
+    "id": 35,
+    "name": "Lakshadweep",
+    "type": "Union Territory",
+    "capital": "Kavaratti",
+    "language": "Malayalam, Mahl",
+    "touristPlace": "Agatti Island",
+    "industry": "Fishing and tourism",
+    "fact": "Lakshadweep is India’s smallest union territory by area."
+  },
+  {
+    "id": 36,
+    "name": "Puducherry",
+    "type": "Union Territory",
+    "capital": "Puducherry",
+    "language": "Tamil, French",
+    "touristPlace": "Promenade Beach",
+    "industry": "Tourism and education",
+    "fact": "Puducherry retains French colonial architecture and culture."
+  }
+]
