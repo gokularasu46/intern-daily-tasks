@@ -1,0 +1,20 @@
+﻿{% extends "base.html" %}
+{% block content %}
+<div class="section-panel">
+  <div class="profile-editor">
+    <div class="profile-preview">
+      <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="{{ user.name }} portrait">
+    </div>
+    <form method="post">
+      <h1>Profile Management</h1>
+      <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+      <input class="form-control mb-3" name="name" value="{{ user.name }}" required>
+      <input class="form-control mb-3" name="headline" value="{{ user.headline }}" required>
+      <textarea class="form-control mb-3" name="bio" rows="4">{{ user.bio }}</textarea>
+      <textarea class="form-control mb-3" name="skills" rows="3">{{ user.skills }}</textarea>
+      <textarea class="form-control mb-3" name="education" rows="3">{{ user.education }}</textarea>
+      <button class="btn btn-dark">Save profile</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

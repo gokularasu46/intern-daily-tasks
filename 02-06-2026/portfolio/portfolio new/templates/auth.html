@@ -1,0 +1,11 @@
+﻿{% extends "base.html" %}
+{% block content %}
+<div class="auth-shell">
+  <div class="section-panel">
+    {% if mode == "login" %}<h1>Login</h1><form method="post"><input type="hidden" name="csrf_token" value="{{ csrf_token }}"><input class="form-control mb-3" name="email" type="email" placeholder="Email" required><input class="form-control mb-3" name="password" type="password" placeholder="Password" required><button class="btn btn-dark w-100">Login</button><a class="d-block mt-3" href="{{ url_for('forgot_password') }}">Forgot password?</a></form>{% endif %}
+    {% if mode == "register" %}<h1>Register</h1><form method="post"><input type="hidden" name="csrf_token" value="{{ csrf_token }}"><input class="form-control mb-3" name="name" placeholder="Name" required><input class="form-control mb-3" name="email" type="email" placeholder="Email" required><input class="form-control mb-3" name="password" type="password" placeholder="Password" required><button class="btn btn-dark w-100">Create account</button></form>{% endif %}
+    {% if mode == "forgot" %}<h1>Forgot Password</h1><form method="post"><input type="hidden" name="csrf_token" value="{{ csrf_token }}"><input class="form-control mb-3" name="email" type="email" placeholder="Email" required><button class="btn btn-dark w-100">Generate reset link</button></form>{% if reset_token %}<div class="alert alert-info mt-3"><a href="{{ url_for('reset_password', token=reset_token) }}">Reset password link</a></div>{% endif %}{% endif %}
+    {% if mode == "reset" %}<h1>Reset Password</h1><form method="post"><input type="hidden" name="csrf_token" value="{{ csrf_token }}"><input class="form-control mb-3" name="password" type="password" placeholder="New password" required><button class="btn btn-dark w-100">Update password</button></form>{% endif %}
+  </div>
+</div>
+{% endblock %}

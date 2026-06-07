@@ -1,0 +1,30 @@
+﻿{% extends "base.html" %}
+{% block content %}
+<section class="hero-band">
+  <div class="row align-items-center g-4">
+    <div class="col-lg-7">
+      <p class="eyebrow">AI-powered professional portfolio and career management system</p>
+      <h1>GOKULARASU K</h1>
+      <p class="lead">{{ owner.headline if owner else "AI & Data Analytics Enthusiast" }}</p>
+      <p class="text-secondary">A living career dashboard that manages projects, certificates, job applications, contact intelligence, analytics, and resume readiness from one secure Flask system.</p>
+      <div class="d-flex flex-wrap gap-2 mt-4">
+        <a class="btn btn-dark" href="{{ url_for('dashboard') }}"><i class="bi bi-speedometer2"></i> Open Dashboard</a>
+        <a class="btn btn-outline-dark" href="{{ url_for('contact') }}"><i class="bi bi-send"></i> Contact</a>
+      </div>
+    </div>
+    <div class="col-lg-5">
+      <div class="profile-portrait">
+        <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="{{ owner.name if owner else 'Profile' }} portrait">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mt-4">
+  <div class="d-flex justify-content-between align-items-center mb-3"><h2>Project Intelligence</h2><a href="{{ url_for('projects') }}">View all</a></div>
+  <div class="row g-3">{% for p in projects %}<div class="col-md-6 col-xl-3"><div class="card h-100"><div class="card-body"><h5>{{ p.title }}</h5><p>{{ p.description }}</p><span class="badge text-bg-light">{{ p.tech_stack }}</span></div></div></div>{% endfor %}</div>
+</section>
+<section class="row g-3 mt-2">
+  <div class="col-lg-6"><div class="section-panel"><h2>Certifications</h2>{% for c in certifications %}<p class="mb-2"><strong>{{ c.title }}</strong><br><span class="text-secondary">{{ c.issuer }} {{ c.issue_date }}</span></p>{% endfor %}</div></div>
+  <div class="col-lg-6"><div class="section-panel"><h2>Latest Blog</h2>{% for b in blogs %}<p><a href="{{ url_for('blog_detail', slug=b.slug) }}">{{ b.title }}</a><br><span class="text-secondary">{{ b.summary }}</span></p>{% endfor %}</div></div>
+</section>
+{% endblock %}

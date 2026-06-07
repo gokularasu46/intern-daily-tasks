@@ -1,0 +1,206 @@
+﻿:root {
+  --ink: #18212f;
+  --muted: #627084;
+  --line: #dce3ea;
+  --paper: #ffffff;
+  --wash: #f4f7fb;
+  --accent: #0f766e;
+  --gold: #c9972b;
+}
+
+body {
+  background: var(--wash);
+  color: var(--ink);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.navbar-brand span {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+h1, h2, h3, h4, h5 {
+  letter-spacing: 0;
+}
+
+h1 {
+  font-size: 2.15rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 1.35rem;
+  font-weight: 750;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.hero-band {
+  background:
+    linear-gradient(120deg, rgba(15, 118, 110, .92), rgba(24, 33, 47, .92)),
+    url("https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1800&q=80");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  border-radius: 8px;
+  padding: clamp(2rem, 5vw, 4.5rem);
+  min-height: 430px;
+}
+
+.hero-band h1 {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+}
+
+.profile-portrait {
+  max-width: 390px;
+  margin-left: auto;
+}
+
+.profile-portrait img, .profile-preview img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+  border: 4px solid rgba(255, 255, 255, .86);
+  border-radius: 8px;
+  box-shadow: 0 22px 46px rgba(24, 33, 47, .28);
+}
+
+.profile-editor {
+  display: grid;
+  grid-template-columns: minmax(220px, 320px) 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.profile-preview img {
+  border-color: var(--paper);
+  box-shadow: 0 16px 38px rgba(24, 33, 47, .1);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: .78rem;
+  font-weight: 800;
+  color: #b9fff4;
+}
+
+.signal-panel, .section-panel, .metric, .card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 16px 38px rgba(24, 33, 47, .06);
+}
+
+.signal-panel {
+  color: var(--ink);
+  display: grid;
+  gap: .75rem;
+  padding: 1rem;
+}
+
+.signal-panel div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  padding: 1rem;
+}
+
+.signal-panel span, .metric span {
+  font-size: 2rem;
+  font-weight: 850;
+  color: var(--accent);
+}
+
+.signal-panel small, .metric small {
+  color: var(--muted);
+  font-weight: 650;
+}
+
+.section-panel {
+  padding: 1.25rem;
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.metric {
+  padding: 1.25rem;
+  display: grid;
+}
+
+.action-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: .75rem;
+}
+
+.action-grid a {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 1rem;
+  color: var(--ink);
+  font-weight: 700;
+  background: #fbfcfe;
+}
+
+.action-grid i {
+  color: var(--gold);
+  margin-right: .5rem;
+}
+
+.auth-shell {
+  max-width: 460px;
+  margin: 5vh auto;
+}
+
+.project-img {
+  height: 190px;
+  object-fit: cover;
+}
+
+.btn {
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.form-control, .form-select {
+  border-radius: 8px;
+  border-color: var(--line);
+}
+
+.table {
+  vertical-align: middle;
+}
+
+@media (max-width: 576px) {
+  main.container-fluid {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .hero-band {
+    padding: 1.5rem;
+  }
+
+  .profile-portrait {
+    margin: 1.5rem auto 0;
+    max-width: 280px;
+  }
+
+  .profile-editor {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-preview {
+    max-width: 260px;
+  }
+}

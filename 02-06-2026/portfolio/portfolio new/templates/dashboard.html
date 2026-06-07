@@ -1,0 +1,12 @@
+﻿{% extends "base.html" %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3"><h1>Smart Portfolio Dashboard</h1><a class="btn btn-dark" href="{{ url_for('admin') }}">Admin</a></div>
+<div class="metric-grid">
+  <div class="metric"><span>{{ projects }}</span><small>Projects</small></div><div class="metric"><span>{{ certifications }}</span><small>Certificates</small></div><div class="metric"><span>{{ messages }}</span><small>Messages</small></div><div class="metric"><span>{{ analytics.total_visitors }}</span><small>Visitors</small></div>
+</div>
+<div class="row g-3 mt-1">
+  <div class="col-lg-8"><div class="section-panel"><h2>Career Operations</h2><div class="action-grid"><a href="{{ url_for('project_add') }}"><i class="bi bi-kanban"></i>Add project</a><a href="{{ url_for('certifications') }}"><i class="bi bi-award"></i>Certificates</a><a href="{{ url_for('resume_analyzer') }}"><i class="bi bi-cpu"></i>Resume AI</a><a href="{{ url_for('career_assistant') }}"><i class="bi bi-chat-dots"></i>Career assistant</a><a href="{{ url_for('messages') }}"><i class="bi bi-envelope"></i>Messages</a><a href="{{ url_for('analytics') }}"><i class="bi bi-graph-up"></i>Analytics</a></div></div></div>
+  <div class="col-lg-4"><div class="section-panel"><h2>Notifications</h2>{% for n in notifications %}<p class="mb-2"><strong>{{ n.title }}</strong><br><span class="text-secondary">{{ n.body }}</span></p>{% else %}<p>No alerts yet.</p>{% endfor %}</div></div>
+</div>
+<div class="section-panel mt-3"><h2>Recent Job Pipeline</h2><table class="table align-middle"><tr><th>Company</th><th>Role</th><th>Status</th><th>Interview</th></tr>{% for j in jobs %}<tr><td>{{ j.company }}</td><td>{{ j.role }}</td><td><span class="badge text-bg-light">{{ j.status }}</span></td><td>{{ j.interview_at }}</td></tr>{% endfor %}</table></div>
+{% endblock %}

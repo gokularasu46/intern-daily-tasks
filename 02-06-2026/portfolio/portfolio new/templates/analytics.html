@@ -1,0 +1,3 @@
+﻿{% extends "base.html" %}
+{% block content %}<h1>Visitor Analytics Dashboard</h1><div class="metric-grid"><div class="metric"><span>{{ analytics.total_visitors }}</span><small>Total visitors</small></div><div class="metric"><span>{{ analytics.daily_visitors }}</span><small>Daily visitors</small></div><div class="metric"><span>{{ analytics.project_views }}</span><small>Project views</small></div></div><div class="section-panel mt-3"><h2>Most Viewed Pages</h2><canvas id="pagesChart" height="90"></canvas></div>{% endblock %}
+{% block scripts %}<script>renderPagesChart({{ analytics.most_viewed_pages|tojson }});</script>{% endblock %}
